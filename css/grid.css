@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contenar {
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px 10px;
+    /* position: relative; */
+  }
+  
+  .contenar div {
+    position: relative;
+  }
+  
+  .contenar div::before {
+    content: "''";
+    position: absolute;
+    color: #b4b4b4;
+    bottom: -35px;
+    right: 20px;
+    font-weight: 100;
+    font-size: 3.5em;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+  }
+  
+  .contenar div::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fe541f;
+    bottom: 0;
+  }
+  
+  h5 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #b9b9b9;
+  }
+  h4,
+  p {
+    padding: 10px;
+  }
+  
+  .osama,
+  .ahmed,
+  .mohamed,
+  .ezz,
+  .mohames-sayed,
+  .gamal,
+  .eman {
+    background-color: white;
+    line-height: 1.6;
+  }
+  
+  .shady,
+  .mahmoud,
+  .ibrahim {
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  .osama {
+    grid-column-start: span 2;
+  }
+  
+  .shady {
+    grid-column-start: 4;
+    grid-row-start: span 3;
+  }
+  
+  .mohamed {
+    grid-row-start: span 2;
+  }
+  
+  .mahmoud {
+    grid-column-start: span 2;
+  }
+  
+  .ezz {
+    grid-column-start: span 2;
+  }
+  
